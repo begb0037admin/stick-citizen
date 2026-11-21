@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ActionMaps version="1" optionsVersion="2" rebindVersion="2" profileName="KevinVKBStart">
+ <CustomisationUIHeader label="Kevin VKB clean start" description="Blank device map for Stick Citizen; no action bindings." image="">
+  <devices>
+   <joystick instance="1"/>
+   <joystick instance="2"/>
+   <joystick instance="3"/>
+  </devices>
+ </CustomisationUIHeader>
+ <options type="joystick" instance="1" Product="VKBsim Gladiator NXT R"/>
+ <options type="joystick" instance="2" Product="VPC Throttle MT-50CM2"/>
+ <options type="joystick" instance="3" Product="VKBsim Gladiator NXT L"/>
+</ActionMaps>
