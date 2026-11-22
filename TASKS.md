@@ -44,9 +44,10 @@ Use Stick Citizen to build and save a separate Star Citizen profile for dual VKB
 - [ ] Record any action that is missing or points in the wrong direction; then correct it in Stick Citizen and re-export the separate profile.
 - [ ] Confirm the A1 cursor pointer behavior on both sticks in game. Check left B1 sends F and right B1 sends left-click.
 
-### Later: Wingman reference
+### Wingman reference
 
-- [ ] After the in-game profile is verified, give Wingman the current actions, modes, stick side, control label and input mapping.
+- [x] Load the 134 active game assignments and VKB B1 mappings into the native Wingman Computer prompt. Verified the updated prompt in Wingman.
+- [ ] Verify a Computer text lookup and an audible reply once microphone input is available.
 - [ ] Have Wingman identify the exact stick/control and show it on a relevant picture when asked in game.
 - [ ] Refresh the reference whenever the verified Stick Citizen profile changes.
 

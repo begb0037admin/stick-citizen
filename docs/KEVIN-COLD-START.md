@@ -26,10 +26,10 @@ Checkpoint: 22 November 2026. Windows checkout: `C:\Users\admin\github\stick-cit
 - Stick Citizen's whole-layout scan passed: 140 binds on 3 sticks, no problems found, and 11 controls with no action (spare buttons are fine). The scan warns that its JS1 device assignment is guessed from plug-in order; a control press in Fix It is needed to confirm the physical stick/slot. The editable profile and LIVE export now contain the JS3 `fps_move_longitudinal invert="1"` option for left-stick on-foot movement. The installed game defines this option for the `gp_movey` binding. The previous `gp_movey` option tag was incorrect. Kevin must reselect `KevinVKBJoystick` to reload the updated export, then test direction and release-to-stop in game.
 - Do not overwrite the live `actionmaps.xml`. Keep testing the named `KevinVKBJoystick` export as a separate profile.
 - The separate older `profiles/kevin-flight-base.xml` is not the current all-mode profile.
-- After the in-game controls are verified, update the structured reference for the later Wingman phase.
+- Wingman Computer now loads a reference of the 134 joystick assignments present in the active Star Citizen profile, plus left B1 = F and right B1 = mouse left-click. The 140-assignment export contains six additional assignments not present in the game's saved profile. The reference was verified in the native Computer configuration after launch. Wingman reported microphone input disabled. The automatic highlighted picture is pending; the current prompt points to Stick Citizen's Sticks view.
 
 On-foot left Y inversion is enabled in the active Star Citizen profile for the left VKB (Joystick/HOTAS 3). Kevin confirmed this step was done.
 
 ## Exact next action
 
-Continue the remaining in-game checks with right-stick look, then flight, salvage and ground driving.
+Verify a text control lookup in Computer, then implement and verify the highlighted picture in Wingman chat. Continue the remaining in-game checks with right-stick look, flight, salvage and ground driving, then refresh Computer's reference after any binding changes.
