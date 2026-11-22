@@ -34,6 +34,8 @@ Wingman fracture lookup now resolves both active spaceship_salvage bindings even
 
 The Wingman lookup audit compared the 140 exported bindings with the saved in-game overrides and the installed 4.10 defaults. Computer now includes six built-in bindings omitted from the saved overrides: flight pitch/yaw/roll, ground pitch/yaw and focused salvage fire. Exact binding coverage matched all 140 exported assignments and four firmware controls, with 31 distinct picture highlights rendered. Live text requests delivered the expected focused salvage fire, flight pitch and ground steering pictures. The skill reads saved overrides ahead of the built-in fallback.
 
+Computer now posts and speaks its control instruction before emitting the highlighted pictures. A live typed fracture question posted the requested instruction, completed its speech playback and then sent the A4 and F1 pictures in that order. Wingman's existing filler message can still appear during a tool call.
+
 ## Exact next action
 
 Test a spoken control lookup when the microphone is available. Continue the remaining in-game checks with right-stick look, flight, salvage and ground driving, then refresh Computer's reference after any binding changes.
