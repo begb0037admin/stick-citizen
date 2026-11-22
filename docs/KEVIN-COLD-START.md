@@ -4,9 +4,11 @@ Checkpoint: 22 November 2026. Windows checkout: `C:\Users\admin\github\stick-cit
 
 ## Start here
 
-**Current status: Kevin confirmed the B1 mouse-click setup works.** Left B1 sends left-click and right B1 sends right-click. Both A1 mini-sticks are configured for pointer movement. Kevin previously confirmed left A1 movement. The next parked task is the in-game forward/reverse thrust check once right A1 movement has been confirmed separately.
+**Current status: KevinVKBFourModeTest is ready to import in Star Citizen LIVE.** Stick Citizen 3.11.0 loaded the new file and showed 73 bindings. Import from Options > Keybindings > Joystick/HOTAS > Advanced Controls Customization > Control Profiles > KevinVKBFourModeTest. In game, first test forward/reverse on left Y and pitch/yaw on right, then test salvage, on-foot movement and ground driving. In-game input is pending.
 
 ## Verified and pending
+
+- **Four-mode test profile, 22 November 2026:** Verified the last Star Citizen Game.log listed right VKB, VPC throttle, then left VKB, corresponding to joystick slots 1/2/3 in the XML. Added a separate KevinVKBFourModeTest.xml under STAR CITIZEN LIVE USER/Client/0/Controls/Mappings. It preserves the 58 current flight-profile mappings, adds salvage mode and beam/focus/spacing controls, adds on-foot strafe and forward/reverse plus existing VKB mouse look/clicks, and adds ground throttle, steering, brake and boost. The new movement bindings reuse action IDs from the previous Kevin profile and map to the physical VKB slots. The XML parsed, neither B1 has a joystick action, and the existing game actionmaps and old import copies were untouched. Kevin already confirmed left B1 left-click and right B1 right-click on Windows.
 
 - **B1 mouse clicks, 22 November 2026:** Both device profiles were written with Set and read back after reconnecting. Profile > Buttons > Logical layer > slot 16 shows Mice L.Button on the left and Mice R.Button on the right. Both use the Button function. The prior Enter mappings were replaced. The local Stick Citizen flight profile has the former Button 4 bindings removed (left Next operator mode and right Decoupled mode). The running app may need to reload the profile. No live Star Citizen bindings were edited.
 
