@@ -57,6 +57,8 @@ Use Stick Citizen to build and save a separate Star Citizen profile for dual VKB
 - Never replace Star Citizen's live `actionmaps.xml` during setup; import and test the named profile separately.
 - Update this file and `docs/KEVIN-COLD-START.md` with the factual checkpoint and exact next action before stopping.
 
+On-foot left Y inversion is enabled in the active Star Citizen profile for the left VKB (Joystick/HOTAS 3). Kevin confirmed this step was done.
+
 ## Exact next action
 
-In Star Citizen LIVE, reselect `KevinVKBJoystick` under Options > Keybindings > Control Profiles, then test left-stick forward/back and release-to-centre stop. Record whether the direction is correct before moving on to the remaining modes.
+Continue the remaining in-game checks with right-stick look, then flight, salvage and ground driving.

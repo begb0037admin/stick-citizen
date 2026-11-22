@@ -28,6 +28,8 @@ Checkpoint: 22 November 2026. Windows checkout: `C:\Users\admin\github\stick-cit
 - The separate older `profiles/kevin-flight-base.xml` is not the current all-mode profile.
 - After the in-game controls are verified, update the structured reference for the later Wingman phase.
 
+On-foot left Y inversion is enabled in the active Star Citizen profile for the left VKB (Joystick/HOTAS 3). Kevin confirmed this step was done.
+
 ## Exact next action
 
-In Star Citizen LIVE, reselect `KevinVKBJoystick` under Options > Keybindings > Control Profiles to reload the updated export. Test left-stick forward/back and release to centre first. If that is correct, test left/right strafe, right-stick look, then salvage and ground controls. Record any incorrect direction or non-working action. Confirm physical stick/JS slot in Fix It if any control is on the wrong device.
+Continue the remaining in-game checks with right-stick look, then flight, salvage and ground driving.
