@@ -13,7 +13,7 @@ Use the existing Stick Citizen app as Kevin's Star Citizen binding tool. Keep it
 - Source baseline: `d0a0df3`
 - Official Windows release v3.11.0 downloaded from GitHub Releases; SHA-256 verified against GitHub release metadata: `04fdce68074ff281c155960fa10735ea40c432ef9bac9ad90573a77e77fe6cd8`.
 - Installed at `C:\Users\admin\AppData\Local\Programs\Stick Citizen\StickCitizen.exe`; version 3.11.0. App launched and its window is open.
-- Blank profile preserved at `profiles/kevin-clean-start.xml`. The current starter map is `profiles/kevin-flight-base.xml` and the app now loads it. It contains 60 bindings across 16 Star Citizen action maps, using known NXT inputs; both A1 mini-sticks are intentionally left out for mouse/Enter. The profile is structurally parsed, but Kevin's visual and physical check is still pending. The Star Citizen XML slot order still needs in-game validation before import.
+- Blank profile preserved at `profiles/kevin-clean-start.xml`. The current starter map is `profiles/kevin-flight-base.xml` and the app loads it. The left full-size stick Y axis maps `js3_y` to `spaceship_movement / v_strafe_longitudinal` with inversion, so pushing forward commands forward thrust. A copy is in Star Citizen's `controls/mappings` folder as `KevinVKBFlightBase.xml`; the live `actionmaps.xml` remains untouched. The in-game forward/reverse thrust check is still pending.
 - Kevin wants both A1 mini-sticks (left and right) to move the cursor and their center presses to send Enter. This is VKB firmware output (virtual mouse + keyboard), separate from Stick Citizen's joystick XML bindings. Back up each VKB profile before firmware writes and confirm each center press can send Enter while cursor mode is active. Latest observation: the left mini-stick appears nonresponsive in Stick Citizen; test for cursor movement outside the app before treating it as a hardware fault.
 - Read-only live SDL enumeration confirms three distinct devices: VKBsim Gladiator NXT L (GUID `0300e0251d2300000102000000000000`), VPC Throttle MT-50CM2 (GUID `030065c1443300009681000000000000`), and VKBsim Gladiator NXT R (GUID `030080231d2300000002000000000000`). Each VKB reports 6 axes, 128 buttons and 1 hat. SDL order is left, throttle, right; the prior Windows Game Controllers list showed right, throttle, left. Kevin confirmed that live movement and button input show on the correct stick picture.
 - The current Star Citizen live bindings file contains vJoy device labels. Do not use it as the new layout's starting point. Start clean and keep the current live profile untouched.
@@ -39,8 +39,9 @@ Use the existing Stick Citizen app as Kevin's Star Citizen binding tool. Keep it
 - [x] Create a separate starter XML from Stick Citizen's built-in dual-stick layout, placing actions only on controls with known inputs.
 - [x] Keep both A1 mini-sticks free of joystick actions so they can be configured as mouse/Enter controls.
 - [x] Preserve the original blank XML and load the starter profile in Stick Citizen.
-- [ ] Kevin: confirm the app header shows `kevin-flight-base.xml · 60 bindings` and that Flight actions appear on the stick pictures.
-- [ ] Kevin: move the left stick forward and confirm it shows longitudinal strafe; press the right main trigger and confirm it shows the mapped fire action.
+- [x] Kevin: confirm the app header shows `kevin-flight-base.xml · 60 bindings` and that Flight actions appear on the stick pictures.
+- [x] Kevin: move the left stick forward and confirm it shows longitudinal strafe; press the right main trigger and confirm it shows the mapped fire action.
+- [ ] In Star Citizen, select `KevinVKBFlightBase` from Control Profiles and verify left-stick forward gives forward thrust and pulling back slows/reverses.
 
 ### Later steps (do not start until Step 1 is tested)
 
@@ -74,4 +75,4 @@ Use the existing Stick Citizen app as Kevin's Star Citizen binding tool. Keep it
 
 ## Exact next action
 
-Wait for Kevin to inspect and test the loaded `kevin-flight-base.xml` profile in Stick Citizen. Do not add the other modes or change VKB firmware until he confirms this step works.
+In Star Citizen, select `KevinVKBFlightBase` from Control Profiles and test only the left full-size stick's forward/back thrust. Do not mark thrust complete until that in-game movement is confirmed.
