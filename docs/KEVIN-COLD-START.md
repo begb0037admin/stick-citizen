@@ -30,6 +30,8 @@ Checkpoint: 22 November 2026. Windows checkout: `C:\Users\admin\github\stick-cit
 
 On-foot left Y inversion is enabled in the active Star Citizen profile for the left VKB (Joystick/HOTAS 3). Kevin confirmed this step was done.
 
+Wingman fracture lookup now resolves both active spaceship_salvage bindings even when the request arrives with seat_general. The live typed request emitted two captioned pictures: right Hat A4 up to select fracture, and right Base F1 to toggle the fracture beam. In-game beam behavior and spoken lookup have not been checked.
+
 ## Exact next action
 
 Test a spoken control lookup when the microphone is available. Continue the remaining in-game checks with right-stick look, flight, salvage and ground driving, then refresh Computer's reference after any binding changes.
