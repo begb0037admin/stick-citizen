@@ -14,7 +14,7 @@ Use the existing Stick Citizen app as Kevin's Star Citizen binding tool. Keep it
 - Official Windows release v3.11.0 downloaded from GitHub Releases; SHA-256 verified against GitHub release metadata: `04fdce68074ff281c155960fa10735ea40c432ef9bac9ad90573a77e77fe6cd8`.
 - Installed at `C:\Users\admin\AppData\Local\Programs\Stick Citizen\StickCitizen.exe`; version 3.11.0. App launched and its window is open.
 - Clean profile at `profiles/kevin-clean-start.xml`; it has no action bindings. The installed app config points to it and maps Star Citizen slots by exact device names: js1 right VKB, js2 VPC throttle, js3 left VKB. Stick-side live feedback has been physically confirmed; the Star Citizen XML slot order still needs in-game validation before import.
-- Kevin wants both A1 mini-sticks (left and right) to move the cursor and their center presses to send Enter. This is VKB firmware output (virtual mouse + keyboard), separate from Stick Citizen's joystick XML bindings. Back up each VKB profile before firmware writes and confirm each center press can send Enter while cursor mode is active.
+- Kevin wants both A1 mini-sticks (left and right) to move the cursor and their center presses to send Enter. This is VKB firmware output (virtual mouse + keyboard), separate from Stick Citizen's joystick XML bindings. Back up each VKB profile before firmware writes and confirm each center press can send Enter while cursor mode is active. Latest observation: the left mini-stick appears nonresponsive in Stick Citizen; test for cursor movement outside the app before treating it as a hardware fault.
 - Read-only live SDL enumeration confirms three distinct devices: VKBsim Gladiator NXT L (GUID `0300e0251d2300000102000000000000`), VPC Throttle MT-50CM2 (GUID `030065c1443300009681000000000000`), and VKBsim Gladiator NXT R (GUID `030080231d2300000002000000000000`). Each VKB reports 6 axes, 128 buttons and 1 hat. SDL order is left, throttle, right; the prior Windows Game Controllers list showed right, throttle, left. Kevin confirmed that live movement and button input show on the correct stick picture.
 - The current Star Citizen live bindings file contains vJoy device labels. Do not use it as the new layout's starting point. Start clean and keep the current live profile untouched.
 - User wants all of Stick Citizen's existing screens and functions: live input, control setup, action editing/search and modes, flight course, Fix It, layout scan, backups, helper and Star Citizen export.
@@ -38,6 +38,7 @@ Use the existing Stick Citizen app as Kevin's Star Citizen binding tool. Keep it
 
 - [ ] Inspect and back up both VKB firmware profiles before changing either A1 mini-stick.
 - [ ] Configure the left and right A1 mini-sticks for virtual mouse movement and center press for Enter, if supported together by their current firmware profiles; leave the throttle unchanged.
+- [ ] Test whether the left A1 moves the Windows pointer outside Stick Citizen; its mouse mode is not displayed as joystick activity in Stick Citizen.
 - [ ] Test cursor movement from each stick and Enter from each center press in a harmless Windows text field, then in one Star Citizen UI.
 - [ ] Skip Stick Citizen's analog-axis mini-stick wizard step if A1 is not being used for flight axes; mouse mode sends mouse events, not joystick axes.
 - [ ] Choose Stick Citizen's built-in Sublight starting layout or keep the blank layout; inspect the assignments on the stick pictures before changing anything.
@@ -65,4 +66,4 @@ Use the existing Stick Citizen app as Kevin's Star Citizen binding tool. Keep it
 
 ## Exact next action
 
-Next, inspect and back up both VKB firmware profiles, then configure and test each A1 mini-stick as cursor movement with its press sending Enter. This is configured in VKB firmware, not in Stick Citizen's XML. Once both work, choose the built-in **Sublight** layout as a visible starter, review assignments on both stick pictures, and use **Fly** before exporting anything to Star Citizen.
+Next, move the left A1 mini-stick while the Windows pointer is visible outside Stick Citizen. If the pointer moves, the mini-stick is responding in mouse mode and its grey Stick Citizen label is expected. If it does not move, press the mini-stick center once to cycle its mode, then test again. After identifying its mode, inspect and back up both VKB firmware profiles before configuring both mini-sticks for cursor movement and Enter.
