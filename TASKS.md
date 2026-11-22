@@ -48,7 +48,8 @@ Use Stick Citizen to build and save a separate Star Citizen profile for dual VKB
 
 - [x] Load the 134 active game assignments and VKB B1 mappings into the native Wingman Computer prompt. Verified the updated prompt in Wingman.
 - [x] Verify a live Computer text lookup emits the highlighted PNG on Wingman's chat stream.
-- [ ] Confirm the picture renders in the native chat and verify a spoken lookup when microphone input is available.
+- [x] Confirm the circled right B1 picture renders in native chat and a plain salvage question triggers a picture automatically.
+- [ ] Verify a spoken lookup when microphone input is available.
 - [x] Enable the local StickCitizenLookup skill in Computer for automatic highlighted control photos.
 - [ ] Refresh the reference whenever the verified Stick Citizen profile changes.
 
