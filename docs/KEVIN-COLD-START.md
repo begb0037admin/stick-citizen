@@ -4,7 +4,7 @@ Checkpoint: 22 November 2026. Windows checkout: `C:\Users\admin\github\stick-cit
 
 ## Start here
 
-**Current task: test both A1 pointers and B1 mouse clicks on the Windows desktop.** VKB wrote and read back Mouse Left Button on the left and Mouse Right Button on the right, both on logical slot 16. B1 is the physical side button marked 3 in Stick Citizen. Move the pointer with each A1, select a desktop icon with left B1, and open its context menu with right B1. Kevin previously confirmed left A1 movement. Physical verification of right A1 and both clicks is pending.
+**Current status: Kevin confirmed the B1 mouse-click setup works.** Left B1 sends left-click and right B1 sends right-click. Both A1 mini-sticks are configured for pointer movement. Kevin previously confirmed left A1 movement. The next parked task is the in-game forward/reverse thrust check once right A1 movement has been confirmed separately.
 
 ## Verified and pending
 
