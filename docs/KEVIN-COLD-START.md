@@ -19,7 +19,7 @@ Checkpoint: 22 November 2026. Windows checkout: `C:\Users\admin\github\stick-cit
 - 25 player/on-foot actions include movement, strafe, sprint, jump, crouch, weapon controls, interaction and item actions. Left full-size stick X/Y controls strafe/walk; the left Y uses the `fps_move_longitudinal` inversion setting after Kevin reported forward/backwards was reversed. The spring-centred axis returns to stop. Right X/Y controls look.
 - 19 ground-vehicle actions cover driving, steering, braking, boost and other vehicle controls. The VPC throttle is not mapped in this profile.
 - Flight and shared ship controls make up the rest. The profile maps left/right VKBs using the Star Citizen device order confirmed from `Game.log`: JS1 right VKB, JS2 VPC throttle, JS3 left VKB.
-- Left B1 sends a mouse left-click and right B1 sends a mouse right-click from VKB firmware. They are not joystick action bindings. No Enter action is assigned. Kevin confirmed the clicks work on Windows.
+- VKB firmware: left B1 is keyboard F (logical slot 16, confirmed after Set). Right B1 is mouse right-click. Kevin previously confirmed left A1 pointer movement on Windows. Physical B1 keypress verification is pending.
 
 ## Verification and pending
 
