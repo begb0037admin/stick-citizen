@@ -4,7 +4,7 @@ Checkpoint: 22 November 2026. Windows checkout: `C:\Users\admin\github\stick-cit
 
 ## Start here
 
-**Current task: verify A1 pointer movement on both sticks.** Kevin confirmed the left moves the pointer. The right mouse-only profile was written and read back. Exact next action: move each A1 mini-stick separately in Windows and check that each moves the cursor. Leave Enter deferred, and do not use the POV press for Enter. Handle software operation yourself; do not move the physical sticks for Kevin.
+**Current task: verify A1 pointer movement on both sticks.** Kevin confirmed the left moves the pointer. The right mouse-only profile was written and read back. Exact next action: move each A1 mini-stick separately in Windows and check that each moves the cursor. Kevin selected the physical B1 side button on both sticks for Enter (callout 3 in Stick Citizen, joystick output B4). Preserve the A1 pointer profiles. B1 Enter is pending. Right logical slot 16 currently emits joystick button 4; an unverified keyboard draft was discarded with Get. Next, identify and move the existing Left Next operator mode and Right Decoupled mode flight bindings to available physical controls, then map B1 to Enter and verify each hardware profile. Do not use the A1 press for Enter. Handle software operation yourself; do not move the physical sticks for Kevin.
 
 ## Verified and pending
 
