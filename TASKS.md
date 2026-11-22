@@ -18,7 +18,7 @@ Use Stick Citizen to build and save a separate Star Citizen profile for dual VKB
 - On foot: left full-size stick X/Y moves/strafe, right X/Y looks. Kevin reported left Y was reversed, so `fps_move_longitudinal invert="1"` is now present in the editable profile and Star Citizen export for JS3. The installed game defines this option for the `gp_movey` binding. The previous `gp_movey` option tag was incorrect. Reselect the profile and test direction and spring-centre stop.
 - Ground: left stick drives, right stick steers, with brake and boost controls assigned.
 - Salvage: left A4 up changes into salvage mode; right main trigger focuses/fires the active beam. Remaining beam and tractor actions are assigned.
-- VKB firmware: left B1 is keyboard F (logical slot 16, confirmed after Set). Right B1 is mouse right-click. Kevin previously confirmed left A1 pointer movement on Windows. Physical B1 keypress verification is pending.
+- VKB firmware: left B1 is keyboard F (logical slot 16, confirmed after Set). Right B1 is mouse left-click (logical slot 16, confirmed after Set and reconnect). Kevin previously confirmed left A1 pointer movement on Windows. Physical B1 keypress verification is pending.
 - Stick Citizen's whole-layout scan passed on 140 binds across 3 sticks: no problems found, with 11 controls having no action (spare controls). Its report says JS1 was guessed from plug-in order, so per-stick slot verification is still pending. The export has not been tested in game. The live `actionmaps.xml` remains untouched.
 - The full action inventory and checkpoint are in [`docs/KEVIN-COLD-START.md`](docs/KEVIN-COLD-START.md).
 
@@ -42,7 +42,7 @@ Use Stick Citizen to build and save a separate Star Citizen profile for dual VKB
 - [ ] Verify salvage mode, beam selection/fire/spacing and tractor controls.
 - [ ] Verify ground driving, steering, brake and boost.
 - [ ] Record any action that is missing or points in the wrong direction; then correct it in Stick Citizen and re-export the separate profile.
-- [ ] Confirm the A1 cursor pointer behavior on both sticks in game. Check left B1 sends F and right B1 sends right-click.
+- [ ] Confirm the A1 cursor pointer behavior on both sticks in game. Check left B1 sends F and right B1 sends left-click.
 
 ### Later: Wingman reference
 
