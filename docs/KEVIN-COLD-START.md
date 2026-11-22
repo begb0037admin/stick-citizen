@@ -23,11 +23,11 @@ Checkpoint: 22 November 2026. Windows checkout: `C:\Users\admin\github\stick-cit
 
 ## Verification and pending
 
-- The profile loads in Stick Citizen and the app saved it for Star Citizen. Stick Citizen's Fix It listener showed “No button press came in” because no physical input was pressed during that diagnostic. This is not an in-game test. Star Citizen's runtime response, axis direction and release-to-stop still need Kevin's physical check.
+- Stick Citizen's whole-layout scan passed: 140 binds on 3 sticks, no problems found, and 11 controls with no action (spare buttons are fine). The scan warns that its JS1 device assignment is guessed from plug-in order; a control press in Fix It is needed to confirm the physical stick/slot. Star Citizen's runtime response, axis direction and release-to-stop still need an in-game check.
 - Do not overwrite the live `actionmaps.xml`. Keep testing the named `KevinVKBJoystick` export as a separate profile.
 - The separate older `profiles/kevin-flight-base.xml` is not the current all-mode profile.
 - After the in-game controls are verified, update the structured reference for the later Wingman phase.
 
 ## Exact next action
 
-In Star Citizen LIVE, import `KevinVKBJoystick` from Options > Keybindings > Control Profiles. Test left stick forward and release to centre, left/right strafe, right stick look, then salvage, on-foot and ground controls. Record any incorrect direction or non-working action before changing the exported profile.
+In Stick Citizen, use Fix It and press one mapped button on each VKB to confirm the detected JS slot matches the profile. Then in Star Citizen LIVE, import `KevinVKBJoystick` from Options > Keybindings > Control Profiles. Test left stick forward and release to centre, left/right strafe, right stick look, then salvage, on-foot and ground controls. Record any incorrect direction or non-working action before changing the exported profile.

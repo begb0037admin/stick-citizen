@@ -19,7 +19,7 @@ Use Stick Citizen to build and save a separate Star Citizen profile for dual VKB
 - Ground: left stick drives, right stick steers, with brake and boost controls assigned.
 - Salvage: left A4 up changes into salvage mode; right main trigger focuses/fires the active beam. Remaining beam and tractor actions are assigned.
 - VKB firmware: left B1 is mouse left-click; right B1 is mouse right-click. Kevin confirmed both clicks and left A1 pointer movement on Windows. Right A1 movement still needs physical confirmation; neither A1 has been tested in Star Citizen. No Enter action is assigned.
-- Stick Citizen Fix It was opened, but its listener reported no button press because no physical control was pressed during the scan. The export has not been tested in game. The live `actionmaps.xml` remains untouched.
+- Stick Citizen's whole-layout scan passed on 140 binds across 3 sticks: no problems found, with 11 controls having no action (spare controls). Its report says JS1 was guessed from plug-in order, so per-stick slot verification is still pending. The export has not been tested in game. The live `actionmaps.xml` remains untouched.
 - The full action inventory and checkpoint are in [`docs/KEVIN-COLD-START.md`](docs/KEVIN-COLD-START.md).
 
 ## Task list
@@ -36,6 +36,7 @@ Use Stick Citizen to build and save a separate Star Citizen profile for dual VKB
 ### In-game validation — next
 
 - [ ] Import `KevinVKBJoystick` from Star Citizen LIVE Options > Keybindings > Control Profiles.
+- [ ] In Stick Citizen Fix It, press one mapped button on each VKB and confirm the detected JS slots match the export.
 - [ ] Verify left stick forward and release-to-centre stop, left/right strafe and right stick look on foot.
 - [ ] Verify flight direction on left Y and pitch/yaw on right stick.
 - [ ] Verify salvage mode, beam selection/fire/spacing and tractor controls.
@@ -58,4 +59,4 @@ Use Stick Citizen to build and save a separate Star Citizen profile for dual VKB
 
 ## Exact next action
 
-In Star Citizen LIVE, import `KevinVKBJoystick` under Options > Keybindings > Control Profiles and test the controls listed under In-game validation. Record the first failed or reversed input before editing the profile.
+In Stick Citizen Fix It, confirm the JS slot for one button on each VKB. Then import `KevinVKBJoystick` in Star Citizen LIVE under Options > Keybindings > Control Profiles and test the controls listed under In-game validation. Record the first failed or reversed input before editing the profile.
