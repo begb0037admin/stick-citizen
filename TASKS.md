@@ -27,7 +27,7 @@ Use Stick Citizen to build and save a separate Star Citizen profile for dual VKB
 ### Complete
 
 - [x] Install the verified official Stick Citizen 3.11.0 release and confirm separate named input devices for both VKBs and the VPC throttle.
-- [x] Set up both VKB A1 mini-sticks as mouse pointers in VKB firmware, with left B1/right B1 as mouse left/right clicks. Kevin confirmed the clicks work on Windows.
+- [x] Set up both VKB A1 mini-sticks as mouse pointers. Save left B1 as keyboard F and right B1 as mouse left-click.
 - [x] Compare the app's available actions with the installed Star Citizen joystick action inventory and save the full comparison CSV.
 - [x] Build the 140-binding `KevinVKBJoystick` profile for flight, salvage, on-foot and ground controls.
 - [x] Load the profile in Stick Citizen and use Save for Star Citizen to create the separate LIVE Control Profiles export.
@@ -35,7 +35,7 @@ Use Stick Citizen to build and save a separate Star Citizen profile for dual VKB
 
 ### In-game validation — next
 
-- [ ] Reselect `KevinVKBJoystick` from Star Citizen LIVE Options > Keybindings > Control Profiles to reload the updated left-Y on-foot inversion.
+- [x] Verify the active Star Citizen profile has the left-Y on-foot inversion enabled.
 - [ ] In Stick Citizen Fix It, press one mapped button on each VKB and confirm the detected JS slots match the export.
 - [ ] Verify left stick forward and release-to-centre stop, left/right strafe and right stick look on foot.
 - [ ] Verify flight direction on left Y and pitch/yaw on right stick.
@@ -46,10 +46,11 @@ Use Stick Citizen to build and save a separate Star Citizen profile for dual VKB
 
 ### Wingman reference
 
-- [x] Load the 134 active game assignments and VKB B1 mappings into the native Wingman Computer prompt. Verified the updated prompt in Wingman.
+- [x] Match all 140 export assignments against the saved game overrides and installed defaults. Include four VKB firmware lookups.
 - [x] Verify a live Computer text lookup emits the highlighted PNG on Wingman's chat stream.
 - [x] Confirm the circled right B1 picture renders in native chat and a plain salvage question triggers a picture automatically.
-- [ ] Verify a spoken lookup when microphone input is available.
+- [x] Verify instruction-before-picture for typed fracture, salvage mode, walking, right B1 and landing gear lookups.
+- [ ] Ask Computer by voice which joystick control toggles landing gear. Confirm the spoken instruction finishes before the picture appears. See [handover and test log](docs/WINGMAN-HANDOVER.md).
 - [x] Enable the local StickCitizenLookup skill in Computer for automatic highlighted control photos.
 - [ ] Refresh the reference whenever the verified Stick Citizen profile changes.
 
@@ -64,4 +65,4 @@ On-foot left Y inversion is enabled in the active Star Citizen profile for the l
 
 ## Exact next action
 
-Continue the remaining in-game checks with right-stick look, then flight, salvage and ground driving.
+Test the spoken landing gear lookup, then continue the in-game checks with right-stick look, flight, salvage and ground driving.

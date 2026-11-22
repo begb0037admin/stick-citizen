@@ -4,7 +4,7 @@ Checkpoint: 22 November 2026. Windows checkout: `C:\Users\admin\github\stick-cit
 
 ## Start here
 
-**Current status: `KevinVKBJoystick` is loaded in Stick Citizen 3.11.0 and exported to Star Citizen LIVE.** It has 140 bindings for flight, salvage, on foot and ground vehicles. Star Citizen has not yet been tested in game with this export. Import from Options > Keybindings > Control Profiles > `KevinVKBJoystick`. The exact next step is to test forward motion and release-to-stop, then look and the mode-specific controls.
+**Current status:** The 140-binding `KevinVKBJoystick` export is the current profile. Star Citizen has saved the left-stick walking inversion. Wingman Computer uses the audited bindings and shows each picture after the instruction. See the [Wingman handover and test log](WINGMAN-HANDOVER.md) for live status, paths and rollback.
 
 ## Stick Citizen and Star Citizen action comparison
 
@@ -23,10 +23,10 @@ Checkpoint: 22 November 2026. Windows checkout: `C:\Users\admin\github\stick-cit
 
 ## Verification and pending
 
-- Stick Citizen's whole-layout scan passed: 140 binds on 3 sticks, no problems found, and 11 controls with no action (spare buttons are fine). The scan warns that its JS1 device assignment is guessed from plug-in order; a control press in Fix It is needed to confirm the physical stick/slot. The editable profile and LIVE export now contain the JS3 `fps_move_longitudinal invert="1"` option for left-stick on-foot movement. The installed game defines this option for the `gp_movey` binding. The previous `gp_movey` option tag was incorrect. Kevin must reselect `KevinVKBJoystick` to reload the updated export, then test direction and release-to-stop in game.
+- Stick Citizen's whole-layout scan passed: 140 binds on 3 sticks, no problems found, and 11 controls with no action (spare buttons are fine). The scan warns that its JS1 device assignment is guessed from plug-in order; a control press in Fix It is needed to confirm the physical stick/slot. The editable profile and LIVE export now contain the JS3 `fps_move_longitudinal invert="1"` option for left-stick on-foot movement. The installed game defines this option for the `gp_movey` binding. The previous `gp_movey` option tag was incorrect. Kevin confirmed the inversion setting in game. Release-to-stop remains on the physical checklist.
 - Do not overwrite the live `actionmaps.xml`. Keep testing the named `KevinVKBJoystick` export as a separate profile.
 - The separate older `profiles/kevin-flight-base.xml` is not the current all-mode profile.
-- Wingman Computer now loads a reference of the 134 joystick assignments present in the active Star Citizen profile, plus left B1 = F and right B1 = mouse left-click. The 140-assignment export contains six additional assignments not present in the game's saved profile. The reference was verified in the native Computer configuration after launch. Wingman reported microphone input disabled. The local custom skill StickCitizenLookup is enabled for Computer. It reads the saved game bindings and uses Stick Citizen's original photos and coordinates to highlight the matching physical control. Source: `integrations/wingman/stick_citizen_lookup` in the local checkout. Installed copy: `%APPDATA%/ShipBit/WingmanAI/custom_skills/stick_citizen_lookup`. A live Computer text lookup displayed right B1 circled in native Wingman chat. After shortening the prompt to avoid truncation and enabling auto-activation, a plain salvage-mode control question also emitted a highlighted PNG automatically.
+- Wingman Computer looks up the 134 saved joystick overrides and six matching built-in assignments, plus the firmware controls. The 140-assignment export contains six additional assignments not present in the game's saved profile. The reference was verified in the native Computer configuration after launch. Wingman reported microphone input disabled. The local custom skill StickCitizenLookup is enabled for Computer. It reads the saved game bindings and uses Stick Citizen's original photos and coordinates to highlight the matching physical control. Source: `integrations/wingman/stick_citizen_lookup` in the local checkout. Installed copy: `%APPDATA%/ShipBit/WingmanAI/custom_skills/stick_citizen_lookup`. A live Computer text lookup displayed right B1 circled in native Wingman chat. After shortening the prompt to avoid truncation and enabling auto-activation, a plain salvage-mode control question also emitted a highlighted PNG automatically.
 
 On-foot left Y inversion is enabled in the active Star Citizen profile for the left VKB (Joystick/HOTAS 3). Kevin confirmed this step was done.
 
@@ -38,4 +38,4 @@ Computer now posts and speaks its control instruction before emitting the highli
 
 ## Exact next action
 
-Test a spoken control lookup when the microphone is available. Continue the remaining in-game checks with right-stick look, flight, salvage and ground driving, then refresh Computer's reference after any binding changes.
+Ask Computer by voice which joystick control toggles landing gear. Confirm the spoken instruction finishes before the picture appears. Continue the remaining in-game checks with right-stick look, flight, salvage and ground driving, then refresh Computer's reference after any binding changes.
